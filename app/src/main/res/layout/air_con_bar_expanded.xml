@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/btn_temperature_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_btn_up_selector"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="56sp"
+                android:text="0"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7881a9"
+                android:textSize="36sp"
+                android:text="℃"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_temperature_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_btn_down_selector"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            android:text="温度"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_switch_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="#bdbcc0ff"
+        >
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_expand_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:iconBackground="@drawable/climate_btn_off_selector"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_expand_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:iconBackground="@drawable/climate_btn_ac_selector"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_expand_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:iconBackground="@drawable/climate_btn_auto_selector"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_expand_innercircle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:iconBackground="@drawable/climate_btn_innercircle_selector"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_expand_heatfront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:iconBackground="@drawable/climate_btn_heatfront_selector"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_expand_heatrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:iconBackground="@drawable/climate_btn_heatrear_selector"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lly_switch_buttons"
+        android:layout_marginTop="103dp"
+        android:background="#bdbcc0ff"
+        android:layout_alignLeft="@id/lly_switch_buttons"
+        android:layout_alignRight="@id/lly_switch_buttons"
+        >
+
+        <ImageView
+            android:id="@+id/btn_blow_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_blowhead_selector"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:id="@+id/btn_blow_head_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_blowheadfoot_selector"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:id="@+id/btn_blow_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_blowfoot_selector"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:background="#25222d"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:id="@+id/btn_blow_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_blowwindowfoot_selector"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginRight="240dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/btn_wind_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_btn_up_selector"
+            />
+
+        <TextView
+            android:id="@+id/tv_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="56sp"
+            android:text="0"
+            />
+
+        <ImageView
+            android:id="@+id/btn_wind_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/climate_btn_down_selector"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            android:text="风量"
+            />
+
+    </LinearLayout>
+
+</merge>

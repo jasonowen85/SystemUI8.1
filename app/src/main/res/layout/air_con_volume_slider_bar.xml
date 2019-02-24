@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/iv_volume_lo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/climate_down_ico_windsmall"
+        />
+
+    <ImageView
+        android:id="@+id/iv_volume_hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/climate_down_ico_windbig"
+        />
+
+    <SeekBar
+        android:id="@+id/sbar_air_volume_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_volume_lo"
+        android:layout_toLeftOf="@id/iv_volume_hi"
+        android:layout_marginTop="35dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:max="7"
+        android:thumb="@mipmap/down_slide_bar"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/air_con_volume_progress"
+        />
+
+</merge>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_nfor_bt_call_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textColor="#ffffff"
+        android:text="call name"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_nfor_bt_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textColor="#ffffff"
+        android:text="phone numeber"
+        android:textSize="30sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        >
+        <TextView
+            android:id="@+id/tv_nfor_bt_call_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:textColor="#9d9fbc"
+            android:text="00:00"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/answer_phone_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bt_phone_call_answer_selector"
+            />
+
+        <ImageView
+            android:id="@+id/terminated_phone_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_nfor_bt_call_time"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/bt_phone_call_terminated_selector"
+            />
+
+    </RelativeLayout>
+
+
+</merge>

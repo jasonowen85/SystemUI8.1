@@ -1,0 +1,9 @@
+/build
+/.gradle
+/.idea
+/captures
+/app/build
+*.iml
+*.log
+*.hprof
+sign/SystemUI.apk

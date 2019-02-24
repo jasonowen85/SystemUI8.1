@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.android.systemui.statusbar.aircon.AirConTemperatureSliderView
+        android:id="@+id/sbar_air_temperature"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.android.systemui.statusbar.aircon.AirConVolumeSliderView
+        android:id="@+id/sbar_air_volume"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        >
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_innercircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            app:iconBackground="@drawable/climate_btn_innercircle_selector"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            app:iconBackground="@drawable/climate_btn_auto_selector"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            app:iconBackground="@drawable/climate_btn_off_selector"
+            />
+
+        <com.android.systemui.statusbar.aircon.AirConSwitchButtonView
+            android:id="@+id/bt_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            app:iconBackground="@drawable/climate_btn_ac_selector"
+            />
+
+        <ImageView
+            android:id="@+id/bt_blow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:src="@mipmap/climate_blowheadfoot_d"
+            />
+    </LinearLayout>
+</merge>

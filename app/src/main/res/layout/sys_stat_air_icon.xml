@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sys_stat_air_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/sys_stat_air_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="7dp"
+        android:paddingEnd="0dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|start"
+        android:src="@drawable/top_wind_level_7" />
+
+    <ImageView
+        android:id="@+id/Climate_icon_front_defrosting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/sys_stat_air_icon"
+        android:src="@drawable/top_blownblown_foot_defrosting" />
+
+</LinearLayout>

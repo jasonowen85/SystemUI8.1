@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!-- added by sxf 下拉菜单中新增音量调节控件 -->
+    <ImageView
+        android:id="@+id/iv_volume_icon"
+        android:layout_width="@dimen/qs_volume_bar_icon"
+        android:layout_height="@dimen/qs_volume_bar_icon"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_qs_volume_bar" />
+
+    <!--TextView
+        android:id="@+id/tv_volume_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_volume_icon"
+        android:paddingStart="8dp"
+        android:text="0%"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/qs_volume_bar_txt_size" /-->
+
+    <com.android.systemui.settings.ToggleSeekBar
+        android:id="@+id/sbar_volume_value"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_volume_icon"
+        android:max="39"
+        android:min="0"
+        android:thumb="@drawable/ic_volume_slider_thumb"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/qs_volume_progress_drawable"
+        />
+
+    <TextView
+        android:id="@+id/tv_volume_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/sbar_volume_value"
+        android:text="0%"
+        android:paddingStart="8dp"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/qs_volume_bar_txt_size" />
+
+</merge>

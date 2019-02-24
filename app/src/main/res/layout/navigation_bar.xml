@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2011, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<com.android.systemui.statusbar.phone.NavigationBarView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/system_bar_background">
+
+    <com.android.systemui.statusbar.phone.NavigationBarInflaterView
+        android:id="@+id/navigation_inflater"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+    <com.android.systemui.statusbar.phone.NavigationBarFragVeiw
+        android:id="@+id/navigationbarfragveiw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bottom_bg">
+
+
+
+        <HorizontalScrollView
+            android:layout_width="1280px"
+            android:layout_height="120px"
+            android:id="@+id/horizontalScrollView"
+	    android:fadingEdge="none"
+	    android:overScrollMode="never"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="1900px"
+                android:layout_height="120px"
+                android:orientation="horizontal"
+		android:paddingLeft="165px"
+		android:paddingRight="165px">
+                    <RelativeLayout
+		        android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/home_radio_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+			    android:drawableTop="@drawable/selecter_home_radio_btn"
+			    android:drawablePadding="-25px"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/homeradiobtntext"
+                            android:textColor="#ffffff"
+
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		        android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_media_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+			    android:drawableTop="@drawable/selecter_home_media_btn"
+			    android:drawablePadding="-25px"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/homemediabtntext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		    	android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/home_phone_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+			    android:drawableTop="@drawable/selecter_home_phone_btn"
+			    android:drawablePadding="-25px"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/homephonebtntext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		   	android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_voiceassistant_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="marquee"
+			    android:drawableTop="@drawable/selecter_home_voiceassistant_btn"
+                            android:drawablePadding="-25px"
+			    android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/homevoiceassistantbtntext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		    	android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_energy_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+			    android:drawableTop="@drawable/selecter_home_energy_btn"
+			    android:drawablePadding="-25px"
+                            android:singleLine="true"
+                            android:text="@string/homeenergybtntext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		    	android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_navi_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+			    android:drawableTop="@drawable/selecter_home_navi_btn"
+			    android:drawablePadding="-25px"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/homenavibtntext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		    	android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_btn_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+			    android:drawableTop="@drawable/selecter_home_btn_setting"
+			    android:drawablePadding="-25px"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/homebtnsettingtext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		    	android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_phonelink_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+			    android:drawableTop="@drawable/selecter_home_phonelink_btn"
+			    android:drawablePadding="-25px"
+                            android:singleLine="true"
+                            android:text="@string/homephonelinkbtntext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+		    	android:layout_marginRight="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_btn_app"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+			    android:drawableTop="@drawable/selecter_home_btn_app"
+			    android:drawablePadding="-25px"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="@string/homebtnapptext"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+    		            android:textSize="17px"/>
+                    </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+	<TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/home_bottom_linebg"/>
+	<RelativeLayout
+            android:layout_width="100px"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+		android:drawableTop="@drawable/selecter_home_btn"
+		android:drawablePadding="-25px"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/homebtntext"
+                android:textColor="#ffffff"
+		android:gravity="center"
+                android:textSize="17px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/home_climate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+		android:drawableTop="@drawable/selecter_home_climate_btn"
+		android:drawablePadding="-25px"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/homeclimatebtntext"
+                android:textColor="#ffffff"
+		android:gravity="center"
+                android:textSize="17px" />
+        </RelativeLayout>
+    </com.android.systemui.statusbar.phone.NavigationBarFragVeiw>
+
+
+</com.android.systemui.statusbar.phone.NavigationBarView>

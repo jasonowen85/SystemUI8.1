@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv_lo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:text="Lo"
+        />
+
+    <TextView
+        android:id="@+id/tv_hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:text="Hi"
+        />
+
+    <SeekBar
+        android:id="@+id/sbar_temp_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_lo"
+        android:layout_toLeftOf="@id/tv_hi"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:max="29"
+        android:thumb="@mipmap/down_slide_bar"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/air_con_temperature_progress"
+        />
+
+</merge>
